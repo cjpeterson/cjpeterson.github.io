@@ -1,0 +1,17 @@
+#navigation_bar {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+}
+
+
+#navigation_item {
+                float: left;
+}
+
+#navigation_item_a {
+                    display: block;
+                    padding: 8px;
+                    background-color: #f2f2f2;
+}

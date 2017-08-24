@@ -1,0 +1,20 @@
+b { 
+    font-weight: bold;
+}
+
+sup {
+    font-size:x-small;
+    vertical-align:super;
+}
+
+.centerimg {
+    display: block;
+    margin: auto;
+    max-width: 640px;
+}
+
+.caption {
+    margin-top: -10px;
+    font-size:small;
+    text-align: center;
+}

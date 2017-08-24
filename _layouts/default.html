@@ -8,6 +8,8 @@
     <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
 
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/navbar.css' }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/extras.css' }}">
 
     <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
@@ -21,6 +23,15 @@
 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+          <ul id="navigation_bar">
+            <li id="navigation_item"><a id="navigation_item_a" href="/">About</a></li>
+            <li id="navigation_item"><a id="navigation_item_a" href="#projects">Projects</a></li>
+            <li id="navigation_item"><a id="navigation_item_a" href="#skills">Skills</a></li>
+            <li id="navigation_item"><a id="navigation_item_a" href="/blog">Blog</a></li>
+            <li id="navigation_item"><a id="navigation_item_a" href="/other">Other</a></li>
+            <li id="navigation_item"><a id="navigation_item_a" href="/contact">Contact</a></li>
+          </ul>
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -41,9 +52,6 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">Blog maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>

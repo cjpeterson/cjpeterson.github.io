@@ -2,3 +2,4 @@ exclude: ['README.md']
 theme: jekyll-theme-slate
 title: "Chris Peterson"
 description: "Software Developer and Tinkerer"
+timezone: US/Mountain

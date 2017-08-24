@@ -1,0 +1,19 @@
+---
+layout: post
+---
+
+<p><b>Name:</b> {{page.name}}
+<br><b>Description:</b> {{page.description}}
+<br><b>Primary Language:</b> {{page.planguage}}
+{% if page.otherapis %}
+<br><b>Other APIs:</b> {{page.otherapis}}
+{% endif %}
+{% if page.codebase %}
+<br><b>Public Code:</b> <a href="{{page.codebase}}">Yes</a>
+{% else %}
+<br><b>Public Code:</b> No
+{% endif %}</p>
+
+<a href="{{ site.url }}/assets/images/{{page.topimage}}"><img class="centerimg" src="{{ site.url }}/assets/images/{{page.topimage}}" ></a>
+
+{{content}}

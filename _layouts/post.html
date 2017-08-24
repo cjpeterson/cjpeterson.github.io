@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h2>{{page.title}}</h2>
+{% assign post_date = (page.date | split: " ") %}
+{{post_date[0]}} {{post_date[1]}}
+{{content}}
